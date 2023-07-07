@@ -31,5 +31,11 @@ public interface WalletService {
      */
     boolean refund(Transaction transaction);
 
+    /**
+     * 详细消费信息list
+     * @param userId
+     * @return
+     */
+
     List<Transaction> getBalanceList(Long userId);
 }

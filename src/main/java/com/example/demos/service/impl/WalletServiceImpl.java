@@ -65,7 +65,7 @@ public class WalletServiceImpl implements WalletService {
     }
 
     /**
-     * 详细消费过程
+     * 详细消费信息list
      * @param transaction
      * @param user
      * @return

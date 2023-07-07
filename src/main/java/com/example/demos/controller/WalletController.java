@@ -41,6 +41,12 @@ public class WalletController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    /**
+     * 退款
+     * @param transaction
+     * @return
+     */
     @PostMapping("/refund/{userId}")
     public ResponseEntity<String> refund(@RequestBody Transaction transaction) {
         boolean refund = walletService.refund(transaction);
@@ -50,6 +56,12 @@ public class WalletController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    /**
+     * 详细消费信息list
+     * @param userId
+     * @return
+     */
     @GetMapping("/balanceList/{userId}")
     public ResponseEntity<List<Transaction>> getBalanceList(@PathVariable Long userId) {
         List<Transaction> balanceList = walletService.getBalanceList(userId);
