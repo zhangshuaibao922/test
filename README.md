@@ -1,2 +1,2 @@
-sql文件在resources
+# sql文件在resources
 主要是用的redission来进行一个锁的操作
